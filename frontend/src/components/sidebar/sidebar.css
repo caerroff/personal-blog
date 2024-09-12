@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    #sidebar {
+        position: relative;
+        width: theme('width.1/5');
+        border-color: theme('colors.gray');
+        background-color: theme('colors.light-gray');
+        border-width: 1px;
+        padding: theme('spacing.1');
+        margin: theme('spacing.0');
+        border-top-right-radius: theme('borderRadius.2xl');
+        border-bottom-right-radius: theme('borderRadius.2xl');
+        min-height: theme('height.screen');
+        transition: all ease-in;
+    }
+    
+    #content{
+        position: absolute;
+        top: 0px;
+        left: theme('width.1/5');
+        padding: theme('spacing.2');
+        width: theme('width.full');
+        max-width: theme('width.4/5');
+        min-height: theme('height.full');
+    }
+}
